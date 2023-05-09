@@ -1,0 +1,13 @@
+@startuml
+
+
+:Cliente: as cli
+
+cli -- (Meter Dinero)
+cli -- (Pedir azucar)
+cli -- (Pedir Producto)
+cli -- (Cancelar)
+
+(Cancelar)..(Devolver dinero) : <<include>>
+(Pedir Producto)..(Devolver dinero) : <<include>>
+@enduml
