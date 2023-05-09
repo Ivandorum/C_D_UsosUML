@@ -1,0 +1,12 @@
+@startuml
+
+(Sacar dinero)<<+ solicitud hecha>>
+
+(Retener tarjeta)
+
+note "Descripcion\n \n condicion:\n{historia sospechosa}\npunto de extension:\nsolicitud hecha" as N1
+
+(Retener tarjeta)..|>(Sacar dinero):<<Extend>>
+
+
+@enduml
