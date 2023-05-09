@@ -6,4 +6,8 @@ act -- (Pagar)
 act -- (Eligir mensajero)
 act -- (Confirmar)
 
+(Identificarse)<..(Registrarse):<<extend>>
+
+(Pagar)<|--(Pagar con tarjeta)
+(Pagar) <|-- (Pagar con transferencia)
 @enduml
