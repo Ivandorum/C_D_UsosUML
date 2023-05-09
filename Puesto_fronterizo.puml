@@ -1,11 +1,9 @@
 @startuml
-'https://plantuml.com/sequence-diagram
+:Ciudadano: as local
+local -- (Registrar entrada)
+:Ciudadano extranjero: as visit
+visit -- (Tomar huellas)
 
-autonumber
-
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
-
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
+(Registrar entrada) <.. (Tomar huellas): <<extend>>
+visit --|>local
 @enduml
