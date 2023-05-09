@@ -1,11 +1,9 @@
 @startuml
-'https://plantuml.com/sequence-diagram
 
-autonumber
+:new Actor: as act
+act -- (Identificarse)
+act -- (Pagar)
+act -- (Eligir mensajero)
+act -- (Confirmar)
 
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
-
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
 @enduml
