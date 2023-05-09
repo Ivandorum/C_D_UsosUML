@@ -1,6 +1,13 @@
 @startuml
 
 :Usuario: as user
+user -- (Iniciar sesion)
+user -- (Recuperar contraseña)
+user -- (Modificar contraseña)
+user -- (Cerrar sesion)
+:Administrador: as admin
+admin -- (Registrar usuario)
+admin -- (Instalar programa)
 
-:Administrador:as admin
+
 @enduml
