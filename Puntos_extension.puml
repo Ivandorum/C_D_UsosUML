@@ -1,6 +1,8 @@
 @startuml
 
-(Sacar dinero)
+(Sacar dinero) as "Sacar dinero
+--
++ solicitud hecha"
 (Retener tarjeta)
 
 note "Descripcion\n \n condicion:\n{historia sospechosa}\npunto de extension:\nsolicitud hecha" as N1
